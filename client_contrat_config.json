@@ -1,0 +1,9 @@
+{
+    "gh_fields": ["f_codconditionreglement", "f_codmodereglement", "f_codtypebdc", "mtengagement_media", "mtengagement_nomedia"],
+    "gh_mapfields": ["Condition de Règlement", "Mode de Règlement", "Mode", "Prestation Média", "Prestation Hors Média + Honoraires Média"],
+    "id_fields": ["client_contratid", "f_clicod"],
+    "audit_fields": ["audit_creator", "audit_creator_date", "audit_updator", "audit_updator_date"],
+    "order_fields" : ["client_contratid", "b_frombatchid"],
+    "table_name": "mdm_france.gh_client_contrat",
+    "principal": false
+}

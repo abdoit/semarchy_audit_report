@@ -1,0 +1,9 @@
+{
+    "gh_fields": ["pronom"],
+    "gh_mapfields": ["Produit"],
+    "id_fields": ["procod", "f_gprocod"],
+    "audit_fields": ["pr_creator", "pr_create_date", "pr_updator", "pr_update_date"],
+    "order_fields" : ["procod", "b_frombatchid"],
+    "table_name": "mdm_france.gh_produit",
+    "principal": false
+}

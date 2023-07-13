@@ -1,0 +1,9 @@
+{
+    "gh_fields":      ["clinom",                   "lbnom_legal_ident", "siretcod_ident", "tvainterncod_ident", "formejuridique_ident", "capitalsocial_ident", "rcscod_ident", "f_codtypetiers", "f_gclcod", "f_codepays_ident", "f_apecod_ident", "f_codperimetre", "f_codbrand", "f_codportefeuille"],
+    "gh_mapfields":   ["Dénomination Commerciale", "Dénomination Sociale (KBIS)", "Numéro d''immatriculation Locale", "Numéro TVA", "Forme juridique", "Capital Social", "N RCS", "Client Type", "Groupe client de rattachement", "Pays", "Activité (Code NAF ou APE)", "Périmètre d''Activité", "Brand", "Portefeuille"],
+    "id_fields": ["clicod"],
+    "audit_fields": ["audit_creator", "audit_creator_date", "audit_updator", "audit_updator_date"],
+    "order_fields" : ["clicod", "b_frombatchid"],
+    "table_name": "mdm_france.gh_client",
+    "principal": true
+}

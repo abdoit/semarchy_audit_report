@@ -1,0 +1,9 @@
+{
+    "gh_fields": ["gpronom"],
+    "gh_mapfields": ["Groupe de produits"],
+    "id_fields": ["gprocod", "f_clicod"],
+    "audit_fields": ["gp_creator", "gp_create_date", "gp_updator", "gp_update_date"],
+    "order_fields" : ["gprocod", "b_frombatchid"],
+    "table_name": "mdm_france.gh_gproduit",
+    "principal": false
+}

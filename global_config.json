@@ -1,0 +1,45 @@
+{
+    "databaseConnection": {
+        "host" : "edh-ha-test-psql-postgresql-server-1.postgres.database.azure.com",
+        "port" : "5432",
+        "database" : "semarchy",
+        "user" : "dbadmin@edh-ha-test-psql-postgresql-server-1",
+        "password" : "^9Qp*TMY=)Znj=p"
+    },
+    "columns_titles": ["Entity", "Client Name", "Action Type", "Field", "Previous Value", "New Value", "Requestor", "Requestor Date", "FinalizationDate"],
+    "entities_configs": ["client_config.json", "client_adress_config.json", "client_contact_config.json", "client_contrat_config.json", "client_filiale_config.json", "gproduit_config.json", "produit_config.json"],
+    "principalFK": "f_clicod",
+    "aux_tables": [
+        {"tableName": "mdm_france.gd_client"                ,   "primaryKey": "clicod"                  ,   "destColumn": "clinom"                  ,  "foreignKey": "f_clicod"                 , "principal": true},
+
+        {"tableName": "mdm_france.gd_client_typetiers"      ,   "primaryKey": "codtypetiers"            ,   "destColumn": "lbtypetiers"             ,  "foreignKey": "f_codtypetiers"           , "principal": false},
+
+        {"tableName": "mdm_france.gd_client_perimetre"      ,   "primaryKey": "codperimetre"            ,   "destColumn": "lbperimetre"             ,  "foreignKey": "f_codperimetre"           , "principal": false},
+
+        {"tableName": "mdm_france.gd_client_brand"          ,   "primaryKey": "codbrand"                ,   "destColumn": "lbbrand"                 ,  "foreignKey": "f_codbrand"               , "principal": false},
+
+        {"tableName": "mdm_france.gd_portefeuille"          ,   "primaryKey": "codportefeuille"         ,   "destColumn": "lbportefeuille"          ,  "foreignKey": "f_codportefeuille"        , "principal": false},
+
+        {"tableName": "mdm_france.gd_pays"                  ,   "primaryKey": "codepays"                ,   "destColumn": "lbpays_fr"               ,  "foreignKey": "f_codepays_ident"         , "principal": false},
+
+        {"tableName": "mdm_france.gd_gclient"               ,   "primaryKey": "gclcod"                  ,   "destColumn": "gclnom"                  ,  "foreignKey": "f_gclcod"                 , "principal": false},
+
+        {"tableName": "mdm_france.gd_pays_nomenclature_naf" ,   "primaryKey": "codnaf"                  ,   "destColumn": "lbdescriptif"            ,  "foreignKey": "f_apecod_ident"           , "principal": false},
+
+        {"tableName": "mdm_france.gd_typeadresse"           ,   "primaryKey": "typeadrcod"              ,   "destColumn": "lbtypeadresse"           ,  "foreignKey": "f_typeadrcod"             , "principal": false},
+
+        {"tableName": "mdm_france.gd_typecontact"           ,   "primaryKey": "codtypecontact"          ,   "destColumn": "lbtypecontact"           ,  "foreignKey": "f_codtypecontact"         , "principal": false},
+
+        {"tableName": "mdm_france.gd_typefonction"          ,   "primaryKey": "codtypefonction"         ,   "destColumn": "lbtypefonction"          ,  "foreignKey": "f_codtypefonction"        , "principal": false},
+
+        {"tableName": "mdm_france.gd_client_typebdc"        ,   "primaryKey": "codtypebdc"              ,   "destColumn": "lbtypebdc"               ,  "foreignKey": "f_codtypebdc"             , "principal": false},
+
+        {"tableName": "mdm_france.gd_conditionreglement"    ,   "primaryKey": "codconditionreglement"   ,   "destColumn": "lbconditionreglement"    ,  "foreignKey": "f_codconditionreglement"  , "principal": false},
+
+        {"tableName": "mdm_france.gd_modereglement"         ,   "primaryKey": "codmodereglement"        ,   "destColumn": "lbmodereglement"         ,  "foreignKey": "f_codmodereglement"       , "principal": false},
+
+        {"tableName": "mdm_france.gd_filiale"               ,   "primaryKey": "filialcod"               ,   "destColumn": "lbnom"                   ,  "foreignKey": "f_filialcod"              , "principal": false},
+
+        {"tableName": "mdm_france.gd_gproduit"              ,   "primaryKey": "gprocod"                 ,   "destColumn": "f_clicod"                ,  "foreignKey": "f_gprocod"                , "principal": false}
+    ]
+}

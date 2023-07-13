@@ -1,0 +1,9 @@
+{
+    "gh_fields": ["dtdebut", "dtfin", "f_filialcod"],
+    "gh_mapfields": ["Du", "Au", "Filliale"],
+    "id_fields": ["codclient_filiale", "f_clicod"],
+    "audit_fields": ["audit_creator", "audit_creator_date", "audit_updator", "audit_updator_date"],
+    "order_fields" : ["codclient_filiale", "b_frombatchid"],
+    "table_name": "mdm_france.gh_client_filiale",
+    "principal": false
+}
